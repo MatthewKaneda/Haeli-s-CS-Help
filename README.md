@@ -12,7 +12,7 @@ Scripts and commands that might be necessary for each project
 While being in project directory, note which folder is your mongodb folder/file (ie `mongo_file`) and run:
 
 	$ mongod --dbpath mongo_file/
-**Note** the 2 dashes "-"
+**Note** the 2 dashes "--"
 
 If you get an error with something like:
 
