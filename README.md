@@ -17,7 +17,8 @@ While being in project directory, note which folder is your mongodb folder/file 
 If you get an error with something like:
 
 	$ Failed to set up listener: SocketException: Address already in use
-Then you either need to setup a listener or you can run mongod on a different port
+**Note** error will be somewhere in the middle of the terminal output. You also know it failed if the terminal exits the task
+To fix, you either need to setup a listener or you can run mongod on a different port
 
 #### Option 1 - setup a listener for TCP protocol
 
