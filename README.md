@@ -2,6 +2,32 @@
 
 Scripts and commands that might be necessary for each project
 
+## Helpful git/Github commands and processes
+
+#### Prerequisites
+1. **MAKE SURE** you are on the right branch (generally your branch that you want to make edits to)
+
+#### Process
+This is starting from the point of if you had just powered on your laptop
+1. Open your terminal and cd into your project root directory
+2. Ensure you are on your branch. For example if your branch is `haeli` then you will run:
+
+	$ git checkout haeli
+If you are already on your branch then it will say `Already on 'master'`
+
+3. Make your edits and you can take as long as you want with your edits
+	- You are currently editing your local branch **NOT** the remote branch
+
+4. To push the edits from your local branch to the remote branch:
+	- `git status` to view your changed files and the files available to add to your commit
+	- `git add {filename}` to add those files to be commited aka staging these files to be committed
+		- Replace `{filename}` with name of file to add
+	- `git commit -m "this is your commit message"` to commit the files you added (staged) to your branch
+		- What `git commit` does is that it takes a snapshot of the project's currently staged changes
+	- To finish it all up, you will finally push the commit you just made:
+	- `git push origin {name_of_branch}`
+		- Replace `{name_of_branch}` with the name of your branch so something like `git push origin haeli` for example.
+
 ## Project 6
 
 #### Prerequisites
