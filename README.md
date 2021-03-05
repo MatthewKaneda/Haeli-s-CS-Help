@@ -1,6 +1,6 @@
 ## Haeli-s-CS-Help
 
-Scripts and commands that might be necessary for each project
+Scripts and commands that might be necessary
 
 ## Project 6
 
