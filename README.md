@@ -20,6 +20,7 @@ If you are already on your branch then it will say `Already on 'master'`
 
 4. To push the edits from your local branch to the remote branch:
 	1. First pull from master by doing: `git pull origin master`
+		- If you get an error saying that 
 	2. `git status` to view your changed files and the files available to add to your commit
 	3. `git add {filename}` to add those files to be commited aka staging these files to be committed
 		- Replace `{filename}` with name of file to add
