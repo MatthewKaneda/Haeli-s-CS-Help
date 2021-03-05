@@ -20,7 +20,16 @@ If you are already on your branch then it will say `Already on 'master'`
 
 4. To push the edits from your local branch to the remote branch:
 	1. First pull from master by doing: `git pull origin master`
-		- If you get an error saying that 
+		- You may encounter 2 cases:
+		1. You may or may not be prompted to add a message for why you want to merge branches
+			- If this is the case then I think you don't need to add a message but if you want to then you can add one.
+			- As soon as you add a message then you need to type `:wq` to save and quit
+		2. In the even that you get a message that `error: Your local changes to the following files would be overwritten...`
+			- use `git stash` to stash your changes
+			- `git pull origin master` to pull
+			- `git stash apply` to reapply your stashed changes
+			- Then you can continue
+
 	2. `git status` to view your changed files and the files available to add to your commit
 	3. `git add {filename}` to add those files to be commited aka staging these files to be committed
 		- Replace `{filename}` with name of file to add
