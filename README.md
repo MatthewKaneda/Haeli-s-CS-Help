@@ -19,14 +19,18 @@ If you are already on your branch then it will say `Already on 'master'`
 	- You are currently editing your local branch **NOT** the remote branch
 
 4. To push the edits from your local branch to the remote branch:
-	- `git status` to view your changed files and the files available to add to your commit
-	- `git add {filename}` to add those files to be commited aka staging these files to be committed
+	1. First pull from master by doing: `git pull origin master`
+	2. `git status` to view your changed files and the files available to add to your commit
+	3. `git add {filename}` to add those files to be commited aka staging these files to be committed
 		- Replace `{filename}` with name of file to add
-	- `git commit -m "this is your commit message"` to commit the files you added (staged) to your branch
+		- I always like doing a `git status` before committing to be able to see what is added so far
+	4. `git commit -m "this is your commit message"` to commit the files you added (staged) to your branch
 		- What `git commit` does is that it takes a snapshot of the project's currently staged changes
-	- To finish it all up, you will finally push the commit you just made:
-	- `git push origin {name_of_branch}`
-		- Replace `{name_of_branch}` with the name of your branch so something like `git push origin haeli` for example.
+	5. To finish it all up, you will finally push the commit you just made:
+		- `git push origin {name_of_branch}`
+			- Replace `{name_of_branch}` with the name of your branch so something like `git push origin haeli` for example.
+
+
 
 ## Project 6
 
