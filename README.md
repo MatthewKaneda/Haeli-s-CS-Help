@@ -40,6 +40,16 @@ If you are already on your branch then it will say `Already on 'master'`
 		- `git push origin {name_of_branch}`
 			- Replace `{name_of_branch}` with the name of your branch so something like `git push origin haeli` for example.
 
+If anyone pushes to the master branch during any time then be sure to pull from master:
+
+	$ git pull origin master
+**NOTE:** even if you pull from master to your local `haeli` branch that does not mean that you pulled to your local `master` branch
+	- Be sure to `git checkout master` then `git pull` to sync your local `master` branch with the remote `master` branch
+
+A quick way to update every branch you have:
+
+	$ git pull --all
+Seldomly use this as it may not be the best practice since it will pull for every branch and there is little control over it
 
 
 ## Project 6
