@@ -2,6 +2,46 @@
 
 Scripts and commands that might be necessary
 
+## Helpful git/Github commands and processes
+
+#### Prerequisites
+1. **MAKE SURE** you are on the right branch (generally your branch that you want to make edits to)
+
+#### Process
+This is starting from the point of if you had just powered on your laptop
+1. Open your terminal and cd into your project root directory
+2. Ensure you are on your branch. For example if your branch is `haeli` then you will run:
+
+	$ git checkout haeli
+If you are already on your branch then it will say `Already on 'master'`
+
+3. Make your edits and you can take as long as you want with your edits
+	- You are currently editing your local branch **NOT** the remote branch
+
+4. To push the edits from your local branch to the remote branch:
+	1. First pull from master by doing: `git pull origin master`
+		- You may encounter 2 cases:
+		1. You may or may not be prompted to add a message for why you want to merge branches
+			- If this is the case then I think you don't need to add a message but if you want to then you can add one.
+			- As soon as you add a message then you need to type `:wq` to save and quit
+		2. In the even that you get a message that `error: Your local changes to the following files would be overwritten...`
+			- use `git stash` to stash your changes
+			- `git pull origin master` to pull
+			- `git stash apply` to reapply your stashed changes
+			- Then you can continue
+
+	2. `git status` to view your changed files and the files available to add to your commit
+	3. `git add {filename}` to add those files to be commited aka staging these files to be committed
+		- Replace `{filename}` with name of file to add
+		- I always like doing a `git status` before committing to be able to see what is added so far
+	4. `git commit -m "this is your commit message"` to commit the files you added (staged) to your branch
+		- What `git commit` does is that it takes a snapshot of the project's currently staged changes
+	5. To finish it all up, you will finally push the commit you just made:
+		- `git push origin {name_of_branch}`
+			- Replace `{name_of_branch}` with the name of your branch so something like `git push origin haeli` for example.
+
+
+
 ## Project 6
 
 #### Prerequisites
