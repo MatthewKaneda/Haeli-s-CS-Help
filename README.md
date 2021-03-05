@@ -12,8 +12,8 @@ This is starting from the point of if you had just powered on your laptop
 1. Open your terminal and cd into your project root directory
 2. Ensure you are on your branch. For example if your branch is `haeli` then you will run:
 
-	$ git checkout haeli
-If you are already on your branch then it will say `Already on 'master'`
+	`$ git checkout haeli`
+	- If you are already on branch `haeli` then it will say `Already on 'haeli'`
 
 3. Make your edits and you can take as long as you want with your edits
 	- You are currently editing your local branch **NOT** the remote branch
