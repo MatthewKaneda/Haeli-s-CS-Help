@@ -22,8 +22,13 @@ This is starting from the point of if you had just powered on your laptop
 	1. First pull from master by doing: `git pull origin master`
 		- You may encounter 2 cases:
 		1. You may or may not be prompted to add a message for why you want to merge branches
-			- If this is the case then I think you don't need to add a message but if you want to then you can add one.
-			- As soon as you add a message then you need to type `:wq` to save and quit
+			- If this is the case then you **NEED** to add a message or else the merge will be cancelled.
+			- To add a message:
+				- Press the `i` key to tell the text editor that you want to "insert" and then use arrow keys to navigate your way through the text.
+				- Add some sort of message saying why/what you're merging so something like `merging from master to haeli`.
+				- Once you're done typing your message then press the `Esc` key to exit "insert" mode then type `:wq` and press enter.
+				- `:wq` saves your changes to that text document and quits/exits out of the document.
+				- Your merge should now be complete as long as there were no merge conflicts.
 		2. In the even that you get a message that `error: Your local changes to the following files would be overwritten...`
 			- use `git stash` to stash your changes
 			- `git pull origin master` to pull
